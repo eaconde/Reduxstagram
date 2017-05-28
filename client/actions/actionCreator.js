@@ -1,5 +1,5 @@
 // increment likes
-function incrementLikes(photo) {
+export function incrementLikes(photo) {
   return {
     type: 'INCREMENT_LIKES',
     photo
@@ -7,7 +7,7 @@ function incrementLikes(photo) {
 }
 
 // add comment
-function addComment(postId, author, comment) {
+export function addComment(postId, author, comment) {
   return {
     type: 'ADD_COMMENT',
     postId, 
@@ -17,7 +17,7 @@ function addComment(postId, author, comment) {
 }
 
 // remove comment
-function addComment(postId, commentId) {
+export function removeComment(postId, commentId) {
   return {
     type: 'REMOVE_COMMENT',
     postId,
